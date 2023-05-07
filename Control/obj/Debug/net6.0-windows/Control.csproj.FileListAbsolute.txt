@@ -1,0 +1,14 @@
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.csproj.AssemblyReference.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.Login.UC_Login.resources
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.csproj.GenerateResource.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.AssemblyInfoInputs.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.AssemblyInfo.cs
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.csproj.CoreCompileInputs.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Control.deps.json
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Control.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Control.pdb
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\refint\Control.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.pdb
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\ref\Control.dll

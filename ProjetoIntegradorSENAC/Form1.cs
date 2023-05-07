@@ -1,12 +1,11 @@
-using Entitys;
-using Controls;
-using Controls.Login;
+using Control.Login;
 
 namespace ProjetoIntegradorSENAC
 {
     public partial class Form1 : Form
     {
         UC_Login tela_login;
+        
         public Form1()
         {
             InitializeComponent();

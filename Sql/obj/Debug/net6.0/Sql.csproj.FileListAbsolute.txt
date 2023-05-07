@@ -1,0 +1,12 @@
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\bin\Debug\net6.0\Sql.deps.json
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\bin\Debug\net6.0\Sql.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\bin\Debug\net6.0\Sql.pdb
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.csproj.AssemblyReference.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.AssemblyInfoInputs.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.AssemblyInfo.cs
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.csproj.CoreCompileInputs.cache
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\refint\Sql.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\Sql.pdb
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Sql\obj\Debug\net6.0\ref\Sql.dll
