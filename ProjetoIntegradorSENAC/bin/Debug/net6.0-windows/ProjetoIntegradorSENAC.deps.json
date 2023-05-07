@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjetoIntegradorSENAC/1.0.0": {
+        "dependencies": {
+          "Entitys": "1.0.0"
+        },
+        "runtime": {
+          "ProjetoIntegradorSENAC.dll": {}
+        }
+      },
+      "Entitys/1.0.0": {
+        "runtime": {
+          "Entitys.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoIntegradorSENAC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entitys/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
