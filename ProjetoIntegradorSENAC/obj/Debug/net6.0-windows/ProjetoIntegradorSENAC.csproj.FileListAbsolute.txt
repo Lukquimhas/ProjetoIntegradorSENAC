@@ -18,3 +18,5 @@ C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.pdb
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.genruntimeconfig.cache
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ref\ProjetoIntegradorSENAC.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\bin\Debug\net6.0-windows\Controls.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\bin\Debug\net6.0-windows\Controls.pdb

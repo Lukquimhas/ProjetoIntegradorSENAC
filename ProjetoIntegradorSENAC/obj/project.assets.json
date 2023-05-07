@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Controls/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Controls.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Controls.dll": {}
+        }
+      },
       "Entitys/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +24,11 @@
     }
   },
   "libraries": {
+    "Controls/1.0.0": {
+      "type": "project",
+      "path": "../Controls/Controls.csproj",
+      "msbuildProject": "../Controls/Controls.csproj"
+    },
     "Entitys/1.0.0": {
       "type": "project",
       "path": "../Entitys/Entitys.csproj",
@@ -23,6 +37,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "Controls >= 1.0.0",
       "Entitys >= 1.0.0"
     ]
   },
@@ -58,6 +73,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Controls\\Controls.csproj": {
+              "projectPath": "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Controls\\Controls.csproj"
+            },
             "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Entitys\\Entitys.csproj": {
               "projectPath": "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Entitys\\Entitys.csproj"
             }
