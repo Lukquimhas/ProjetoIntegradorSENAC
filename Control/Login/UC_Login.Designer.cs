@@ -92,6 +92,7 @@
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(236, 31);
             this.tb_password.TabIndex = 4;
+            this.tb_password.UseSystemPasswordChar = true;
             // 
             // btn_login
             // 
@@ -103,6 +104,7 @@
             this.btn_login.TabIndex = 5;
             this.btn_login.Text = "ENTRAR";
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // btn_showPassword
             // 

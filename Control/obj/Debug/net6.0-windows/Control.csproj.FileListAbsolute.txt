@@ -12,3 +12,6 @@ C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\refint\Control.dll
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.pdb
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\ref\Control.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Sql.dll
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Sql.pdb
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\obj\Debug\net6.0-windows\Control.csproj.CopyComplete
