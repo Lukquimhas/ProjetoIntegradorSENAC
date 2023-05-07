@@ -1,9 +1,0 @@
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\bin\Debug\Controls.dll
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\bin\Debug\Controls.pdb
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.csproj.AssemblyReference.cache
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.Login.UC_Login.resources
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.csproj.GenerateResource.cache
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.csproj.CoreCompileInputs.cache
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.dll
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.pdb
-C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Controls\obj\Debug\Controls.Properties.Resources.resources
