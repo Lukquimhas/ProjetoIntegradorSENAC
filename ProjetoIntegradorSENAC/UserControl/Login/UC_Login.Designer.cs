@@ -1,4 +1,4 @@
-﻿namespace Control.Login
+﻿namespace ProjetoIntegradorSENAC.Login
 {
     partial class UC_Login
     {

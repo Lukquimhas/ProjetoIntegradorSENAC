@@ -3,7 +3,7 @@ using Sql;
 using Sql.Query;
 
 
-namespace Control.Login
+namespace ProjetoIntegradorSENAC.Login
 {
     public partial class UC_Login : UserControl
     {

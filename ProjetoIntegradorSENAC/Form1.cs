@@ -1,4 +1,4 @@
-using Control.Login;
+using ProjetoIntegradorSENAC.Login;
 
 namespace ProjetoIntegradorSENAC
 {

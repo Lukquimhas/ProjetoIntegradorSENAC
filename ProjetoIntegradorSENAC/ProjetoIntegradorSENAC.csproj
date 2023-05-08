@@ -13,4 +13,10 @@
     <ProjectReference Include="..\Entitys\Entitys.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Login\UC_Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
