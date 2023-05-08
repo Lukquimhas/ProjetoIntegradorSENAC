@@ -35,11 +35,10 @@ namespace ProjetoIntegradorSENAC.Login
 
                 string query = script.ScriptValidateLogin(username);
                 var userInfo = db.ExecuteSelectQuery(query);
-                
-                
+
                 if (userInfo.Contains(username) && userInfo.Contains(password))
-                    MessageBox.Show("Logado");
-                else if(userInfo.Count > 0)
+                    ShowMainForm();
+                else if (userInfo.Count > 0)
                     MessageBox.Show("A senha digitada está incorreta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                     MessageBox.Show("Usuário não cadastrado, tente novamente ou contate o suporte.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -50,7 +49,19 @@ namespace ProjetoIntegradorSENAC.Login
             }
         }
 
+        private void ShowMainForm()
+        {
+            frmMain _frmMain = new frmMain();
+            _frmMain.Show();
+            this.FindForm().Hide();
+        }
+
         private void btn_login_Click(object sender, EventArgs e)
+        {
+            VerifyLoginWhiteSpace();
+        }
+
+        private void VerifyLoginWhiteSpace()
         {
             if (tb_username.Text != "" && tb_password.Text != "")
                 ValidadeLogin(tb_username.Text, tb_password.Text);
