@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sql.Query
 {
-    internal class ScriptSelect
+    public class ScriptSelect
     {
         public string ScriptValidateLogin(string username)
         {
