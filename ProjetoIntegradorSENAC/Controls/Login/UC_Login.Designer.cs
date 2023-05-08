@@ -109,6 +109,11 @@
             // btn_showPassword
             // 
             this.btn_showPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_showPassword.BackColor = System.Drawing.Color.Transparent;
+            this.btn_showPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_showPassword.FlatAppearance.BorderSize = 0;
+            this.btn_showPassword.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_showPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btn_showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_showPassword.ImageKey = "eye.png";
             this.btn_showPassword.ImageList = this.imageList1;
@@ -116,7 +121,7 @@
             this.btn_showPassword.Name = "btn_showPassword";
             this.btn_showPassword.Size = new System.Drawing.Size(50, 31);
             this.btn_showPassword.TabIndex = 6;
-            this.btn_showPassword.UseVisualStyleBackColor = true;
+            this.btn_showPassword.UseVisualStyleBackColor = false;
             this.btn_showPassword.Click += new System.EventHandler(this.btn_showPassword_Click);
             // 
             // imageList1
