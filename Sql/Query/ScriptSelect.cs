@@ -10,7 +10,7 @@ namespace Sql.Query
     {
         public string ScriptValidateLogin(string username)
         {
-            return $"SELECT IdUsuario, username, senha WHERE username={username}";
+            return $"SELECT IdUsuario, username, senha FROM usuarios WHERE username='{username}'";
         }
 
 
