@@ -122,3 +122,5 @@ C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoInteg
 C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.genruntimeconfig.cache
 C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ref\ProjetoIntegradorSENAC.dll
 C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Main.Home.UC_Home.resources
+C:\Users\leonardo.oliveira\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Main.Home.UC_Home.resources
+C:\Users\leonardo.oliveira\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.frmMain.resources
