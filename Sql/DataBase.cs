@@ -1,5 +1,5 @@
 ﻿using System.Configuration;
-using System.Configuration.Provider;
+using Entitys;
 using System.Data.SqlClient;
 
 namespace Sql
@@ -43,6 +43,42 @@ namespace Sql
                 }
 
                 return InfoList;
+            }
+        }
+
+        public List<Freight> ExecuteFreightSelectQuery(string query)
+        {
+            var Freights = new List<Freight>();
+            using (var conn = ConnectionProjetoSENAC())
+            {
+                var command = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandText = query
+                };
+                conn.Open();
+
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Freights.Add(new Freight
+                    {
+                        IdFreight = reader["Id"].ToString(),
+                        From = reader["origem"].ToString(),
+                        To = reader["destino"].ToString(),
+                        Distance = double.Parse(reader["distancia"].ToString()),
+                        ValueKm = double.Parse(reader["valor_km"].ToString()),
+                        TotalValue = double.Parse(reader["valor_total"].ToString()),
+                        Load = reader["carga"].ToString(),
+                        Trace = reader["rastreio"].ToString(),
+                        Obs = reader["observacao"].ToString(),
+                        Driver = reader["motorista"].ToString(),
+                        Client = reader["cliente"].ToString(),
+                        Concluded = reader["concluido"].ToString()
+                    });
+                }
+
+                return Freights;
             }
         }
 

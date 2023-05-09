@@ -9,7 +9,8 @@
       "ProjetoIntegradorSENAC/1.0.0": {
         "dependencies": {
           "Control": "1.0.0",
-          "Entitys": "1.0.0"
+          "Entitys": "1.0.0",
+          "Sql": "1.0.0"
         },
         "runtime": {
           "ProjetoIntegradorSENAC.dll": {}
@@ -199,6 +200,7 @@
       },
       "Sql/1.0.0": {
         "dependencies": {
+          "Entitys": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Data.SqlClient": "4.8.5"
         },

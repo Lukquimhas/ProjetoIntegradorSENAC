@@ -13,6 +13,9 @@ namespace Sql.Query
             return $"SELECT IdUsuario, username, senha FROM usuarios WHERE username='{username}'";
         }
 
-
+        public string ScriptGetFreight()
+        {
+            return $"SELECT * FROM fretes";
+        }
     }
 }

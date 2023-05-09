@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Control\Control.csproj" />
     <ProjectReference Include="..\Entitys\Entitys.csproj" />
+    <ProjectReference Include="..\Sql\Sql.csproj" />
   </ItemGroup>
 
   <ItemGroup>

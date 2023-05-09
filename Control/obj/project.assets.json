@@ -277,10 +277,21 @@
           }
         }
       },
+      "Entitys/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entitys.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entitys.dll": {}
+        }
+      },
       "Sql/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Entitys": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
@@ -789,6 +800,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Entitys/1.0.0": {
+      "type": "project",
+      "path": "../Entitys/Entitys.csproj",
+      "msbuildProject": "../Entitys/Entitys.csproj"
+    },
     "Sql/1.0.0": {
       "type": "project",
       "path": "../Sql/Sql.csproj",
@@ -802,23 +818,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leonardo.oliveira\\.nuget\\packages\\": {},
+    "C:\\Users\\leo11\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo.oliveira\\Documents\\GitHub\\ProjetoIntegradorSENAC\\Control\\Control.csproj",
+      "projectUniqueName": "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Control\\Control.csproj",
       "projectName": "Control",
-      "projectPath": "C:\\Users\\leonardo.oliveira\\Documents\\GitHub\\ProjetoIntegradorSENAC\\Control\\Control.csproj",
-      "packagesPath": "C:\\Users\\leonardo.oliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardo.oliveira\\Documents\\GitHub\\ProjetoIntegradorSENAC\\Control\\obj\\",
+      "projectPath": "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Control\\Control.csproj",
+      "packagesPath": "C:\\Users\\leo11\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Control\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\leonardo.oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leo11\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -833,8 +849,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\leonardo.oliveira\\Documents\\GitHub\\ProjetoIntegradorSENAC\\Sql\\Sql.csproj": {
-              "projectPath": "C:\\Users\\leonardo.oliveira\\Documents\\GitHub\\ProjetoIntegradorSENAC\\Sql\\Sql.csproj"
+            "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Sql\\Sql.csproj": {
+              "projectPath": "C:\\Users\\leo11\\source\\repos\\Forms\\ProjetoIntegradorSENAC\\Sql\\Sql.csproj"
             }
           }
         }
@@ -873,7 +889,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
