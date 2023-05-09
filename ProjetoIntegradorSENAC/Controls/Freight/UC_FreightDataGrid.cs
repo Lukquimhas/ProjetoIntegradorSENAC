@@ -30,10 +30,12 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
 
             foreach(var freight in freights)
             {
-                dgv_Freight.Rows.Add(freight.IdFreight, freight.From, freight.To, freight.Distance + "Km", 
+                dgv_Freight.Rows.Add(freight.ToString().Split(";"));
+
+                /*dgv_Freight.Rows.Add(freight.IdFreight, freight.From, freight.To, freight.Distance + "Km", 
                     freight.ValueKm.ToString("C2", new CultureInfo("pt-BR")), 
                     freight.TotalValue.ToString("C2", new CultureInfo("pt-BR")), 
-                    freight.Load, freight.Trace, freight.Obs, freight.Driver, freight.Client, freight.Concluded);
+                    freight.Load, freight.Trace, freight.Obs, freight.Driver, freight.Client, freight.Concluded);*/
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,5 +23,12 @@ namespace Entitys
         public string Concluded { get; set; }
 
         public Freight() { }
+
+        public override string ToString()
+        {
+            return $"{IdFreight}; " +
+                $"{From}; {To}; {Distance}Km; {ValueKm.ToString("C2", new CultureInfo("pt-BR"))}; {TotalValue.ToString("C2", new CultureInfo("pt-BR"))};" +
+                $"{Load}; {Trace}; {Obs}; {Driver}; {Client}; {Concluded}";
+        }
     }
 }
