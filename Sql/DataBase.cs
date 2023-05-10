@@ -7,7 +7,7 @@ namespace Sql
 {
     public class DataBase
     {
-        public void ExecuteInsertQuery(string query)
+        public void ExecuteQuery(string query)
         {
             using(var conn = ConnectionProjetoSENAC())
             {

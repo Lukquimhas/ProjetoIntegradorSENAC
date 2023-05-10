@@ -16,6 +16,7 @@ namespace ProjetoIntegradorSENAC.Controls.Main.Profile
     public partial class UC_Profile : UserControl
     {
         User userLogged;
+        DataBase db;
 
         string UserId;
         public UC_Profile(string userId)
@@ -23,12 +24,12 @@ namespace ProjetoIntegradorSENAC.Controls.Main.Profile
             InitializeComponent();
 
             UserId = userId;
+            db = new DataBase();
             userLogged = GetLoggedUser(userId);
         }
 
         private User GetLoggedUser(string userId)
         {
-            var db = new DataBase();
             var select = new ScriptSelect();
 
             var query = select.ScriptSelectUserInfo(userId);
@@ -54,10 +55,14 @@ namespace ProjetoIntegradorSENAC.Controls.Main.Profile
             var newPassword = tb_newPassword.Text;
             var confirmPassword = tb_confirmedPassword.Text;
 
+            var update = new ScriptUpdate();
+            var query = update.ScriptChangePassword(UserId, newPassword);
+
             if (VerifyCurrentPassword(currentPassword) && ValidateNewPassword(newPassword, confirmPassword))
             {
                 userLogged.Password = newPassword;
                 MessageBox.Show("Senha alterada com sucesso!");
+                db.ExecuteQuery(query);
                 ClearTextBox();
             }
         }
