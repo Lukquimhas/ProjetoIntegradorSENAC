@@ -17,5 +17,10 @@ namespace Sql.Query
         {
             return $"SELECT * FROM fretes";
         }
+
+        public string ScriptSelectUserInfo(string UserId)
+        {
+            return $"SELECT * FROM usuarios WHERE IdUsuario='{UserId}'";
+        }
     }
 }

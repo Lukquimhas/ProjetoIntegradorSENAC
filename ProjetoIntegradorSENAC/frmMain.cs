@@ -1,5 +1,6 @@
 ﻿using ProjetoIntegradorSENAC.Controls.Freight;
 using ProjetoIntegradorSENAC.Controls.Main.Home;
+using ProjetoIntegradorSENAC.Controls.Main.Profile;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,12 +17,18 @@ namespace ProjetoIntegradorSENAC
     {
         UC_Home uc_home;
         UC_FreightDataGrid uc_freight;
+        UC_Profile uc_Profile;
 
-        public frmMain()
+        string UserId;
+
+        public frmMain(string userId)
         {
             InitializeComponent();
             uc_home = new UC_Home();
             uc_freight = new UC_FreightDataGrid();
+            uc_Profile = new UC_Profile(userId);
+
+            UserId = userId;
         }
 
 
@@ -63,6 +70,7 @@ namespace ProjetoIntegradorSENAC
         private void btn_Profile_Click(object sender, EventArgs e)
         {
             ChangeLeftPanelIcon((sender as Button), 3);
+            ChangePage(uc_Profile);
         }
     }
 }

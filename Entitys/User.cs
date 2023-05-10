@@ -14,7 +14,7 @@ namespace Entitys
         public string Email { get; set; }
         public string Password { get; set; }
         public string Cpf { get; set; }
-        public string IdEmpresa { get; set; }
+        public string IdCompany { get; set; }
         public string AccountType { get; set; }
 
         public User()

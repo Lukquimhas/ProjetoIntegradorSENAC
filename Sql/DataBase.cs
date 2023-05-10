@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using Entitys;
 using System.Data.SqlClient;
+using System.Reflection.Metadata;
 
 namespace Sql
 {
@@ -79,6 +80,38 @@ namespace Sql
                 }
 
                 return Freights;
+            }
+        }
+
+        public User ExecuteUserLoggedSelectQuery(string query)
+        {
+            using (var conn = ConnectionProjetoSENAC())
+            {
+                var command = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandText = query
+                };
+                conn.Open();
+
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    var user = new User
+                    {
+                        UserId = reader["IdUsuario"].ToString(),
+                        Name = reader["nome"].ToString(),
+                        Username = reader["username"].ToString(),
+                        Email = reader["email"].ToString(),
+                        Password = reader["senha"].ToString(),
+                        Cpf = reader["cpf"].ToString(),
+                        IdCompany = reader["IdEmpresa"].ToString(),
+                        AccountType = reader["tipo_acesso"].ToString()
+                    };
+                    return user;
+                }
+
+                return new User();
             }
         }
 

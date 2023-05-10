@@ -128,3 +128,5 @@ C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Login.UC_Login.resources
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Main.Home.UC_Home.resources
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.frmMain.resources
+C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Freight.UC_FreightDataGrid.resources
+C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Main.Profile.UC_Profile.resources

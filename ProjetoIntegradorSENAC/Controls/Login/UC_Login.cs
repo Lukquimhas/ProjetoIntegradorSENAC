@@ -30,14 +30,14 @@ namespace ProjetoIntegradorSENAC.Login
         {
             try
             {
-                DataBase db = new DataBase();
-                ScriptSelect script = new ScriptSelect();
+                var db = new DataBase();
+                var script = new ScriptSelect();
 
-                string query = script.ScriptValidateLogin(username);
+                var query = script.ScriptValidateLogin(username);
                 var userInfo = db.ExecuteSelectQuery(query);
 
                 if (userInfo.Contains(username) && userInfo.Contains(password))
-                    ShowMainForm();
+                    ShowMainForm(userInfo[0]);
                 else if (userInfo.Count > 0)
                     MessageBox.Show("A senha digitada está incorreta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
@@ -49,9 +49,9 @@ namespace ProjetoIntegradorSENAC.Login
             }
         }
 
-        private void ShowMainForm()
+        private void ShowMainForm(string userId)
         {
-            frmMain _frmMain = new frmMain();
+            var _frmMain = new frmMain(userId);
             _frmMain.Show();
             this.FindForm().Hide();
         }
