@@ -12,10 +12,6 @@ namespace ProjetoIntegradorSENAC.Login
             InitializeComponent();
         }
 
-        private void btn_showPassword_Click(object sender, EventArgs e)
-        {
-            ShowOrHidePassword((sender as Button));
-        }
 
         private void ShowOrHidePassword(Button btn)
         {
@@ -72,6 +68,16 @@ namespace ProjetoIntegradorSENAC.Login
                 ValidadeLogin(tb_username.Text, tb_password.Text);
             else
                 MessageBox.Show("Por favor preencha todos os campos");
+        }
+
+        private void btn_showPassword_MouseHover(object sender, EventArgs e)
+        {
+            ShowOrHidePassword((sender as Button));
+        }
+
+        private void btn_showPassword_MouseLeave(object sender, EventArgs e)
+        {
+            ShowOrHidePassword((sender as Button));
         }
     }
 }

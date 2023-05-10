@@ -147,6 +147,7 @@
             this.tb_confirmedPassword.Name = "tb_confirmedPassword";
             this.tb_confirmedPassword.Size = new System.Drawing.Size(212, 23);
             this.tb_confirmedPassword.TabIndex = 4;
+            this.tb_confirmedPassword.UseSystemPasswordChar = true;
             this.tb_confirmedPassword.Validating += new System.ComponentModel.CancelEventHandler(this.tb_confirmedPassword_Validating);
             // 
             // tb_newPassword
@@ -155,6 +156,7 @@
             this.tb_newPassword.Name = "tb_newPassword";
             this.tb_newPassword.Size = new System.Drawing.Size(212, 23);
             this.tb_newPassword.TabIndex = 3;
+            this.tb_newPassword.UseSystemPasswordChar = true;
             this.tb_newPassword.Validating += new System.ComponentModel.CancelEventHandler(this.tb_newPassword_Validating);
             // 
             // tb_currentPassword
@@ -163,6 +165,7 @@
             this.tb_currentPassword.Name = "tb_currentPassword";
             this.tb_currentPassword.Size = new System.Drawing.Size(212, 23);
             this.tb_currentPassword.TabIndex = 2;
+            this.tb_currentPassword.UseSystemPasswordChar = true;
             this.tb_currentPassword.Validating += new System.ComponentModel.CancelEventHandler(this.tb_currentPassword_Validating);
             // 
             // errorProvider1

@@ -119,10 +119,11 @@
             this.btn_showPassword.ImageList = this.imageList1;
             this.btn_showPassword.Location = new System.Drawing.Point(428, 215);
             this.btn_showPassword.Name = "btn_showPassword";
-            this.btn_showPassword.Size = new System.Drawing.Size(50, 31);
+            this.btn_showPassword.Size = new System.Drawing.Size(32, 31);
             this.btn_showPassword.TabIndex = 6;
             this.btn_showPassword.UseVisualStyleBackColor = false;
-            this.btn_showPassword.Click += new System.EventHandler(this.btn_showPassword_Click);
+            this.btn_showPassword.MouseLeave += new System.EventHandler(this.btn_showPassword_MouseLeave);
+            this.btn_showPassword.MouseHover += new System.EventHandler(this.btn_showPassword_MouseHover);
             // 
             // imageList1
             // 
