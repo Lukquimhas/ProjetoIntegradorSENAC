@@ -16,6 +16,7 @@ namespace Entitys
         public string Cpf { get; set; }
         public string IdCompany { get; set; }
         public string AccountType { get; set; }
+        
 
         public User()
         {

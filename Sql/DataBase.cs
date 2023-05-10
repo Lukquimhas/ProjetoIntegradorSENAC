@@ -115,6 +115,8 @@ namespace Sql
             }
         }
 
+
+
         public static SqlConnection ConnectionProjetoSENAC()
         {
             return new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);

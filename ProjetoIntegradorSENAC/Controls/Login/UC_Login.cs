@@ -14,15 +14,20 @@ namespace ProjetoIntegradorSENAC.Login
 
         private void btn_showPassword_Click(object sender, EventArgs e)
         {
+            ShowOrHidePassword((sender as Button));
+        }
+
+        private void ShowOrHidePassword(Button btn)
+        {
             if (tb_password.UseSystemPasswordChar)
             {
                 tb_password.UseSystemPasswordChar = false;
-                (sender as Button).ImageIndex = 1;
+                btn.ImageIndex = 1;
             }
             else
             {
                 tb_password.UseSystemPasswordChar = true;
-                (sender as Button).ImageIndex = 0;
+                btn.ImageIndex = 0;
             }
         }
 
