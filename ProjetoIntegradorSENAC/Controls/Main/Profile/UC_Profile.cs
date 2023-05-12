@@ -15,7 +15,7 @@ namespace ProjetoIntegradorSENAC.Controls.Main.Profile
 {
     public partial class UC_Profile : UserControl
     {
-        User userLogged;
+        _user userLogged;
         DataBase db;
 
         string UserId;
@@ -28,7 +28,7 @@ namespace ProjetoIntegradorSENAC.Controls.Main.Profile
             userLogged = GetLoggedUser(userId);
         }
 
-        private User GetLoggedUser(string userId)
+        private _user GetLoggedUser(string userId)
         {
             var select = new ScriptSelect();
 

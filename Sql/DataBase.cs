@@ -65,8 +65,8 @@ namespace Sql
                     Freights.Add(new Freight
                     {
                         IdFreight = reader["Id"].ToString(),
-                        From = reader["origem"].ToString(),
-                        To = reader["destino"].ToString(),
+                        StartPoint = reader["origem"].ToString(),
+                        Destination = reader["destino"].ToString(),
                         Distance = double.Parse(reader["distancia"].ToString()),
                         ValueKm = double.Parse(reader["valor_km"].ToString()),
                         TotalValue = double.Parse(reader["valor_total"].ToString()),
@@ -83,7 +83,7 @@ namespace Sql
             }
         }
 
-        public User ExecuteUserLoggedSelectQuery(string query)
+        public _user ExecuteUserLoggedSelectQuery(string query)
         {
             using (var conn = ConnectionProjetoSENAC())
             {
@@ -97,7 +97,7 @@ namespace Sql
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    var user = new User
+                    var user = new _user
                     {
                         UserId = reader["IdUsuario"].ToString(),
                         Name = reader["nome"].ToString(),
@@ -111,7 +111,7 @@ namespace Sql
                     return user;
                 }
 
-                return new User();
+                return new _user();
             }
         }
 

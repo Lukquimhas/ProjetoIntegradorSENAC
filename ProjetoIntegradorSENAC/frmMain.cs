@@ -25,7 +25,7 @@ namespace ProjetoIntegradorSENAC
         {
             InitializeComponent();
             uc_home = new UC_Home();
-            uc_freight = new UC_FreightDataGrid();
+            uc_freight = new UC_FreightDataGrid(userId);
             uc_Profile = new UC_Profile(userId);
 
             UserId = userId;

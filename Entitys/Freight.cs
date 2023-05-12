@@ -10,8 +10,8 @@ namespace Entitys
     public class Freight
     {
         public string IdFreight { get; set; }
-        public string From { get; set; }
-        public string To { get; set; }
+        public string StartPoint { get; set; }
+        public string Destination { get; set; }
         public double Distance { get; set; }
         public double ValueKm { get; set; }
         public double TotalValue { get; set; }
@@ -33,7 +33,7 @@ namespace Entitys
         public override string ToString()
         {
             return $"{IdFreight}; " +
-                $"{From}; {To}; {Distance}Km; {ValueKm.ToString("C2", new CultureInfo("pt-BR"))}; {TotalValue.ToString("C2", new CultureInfo("pt-BR"))};" +
+                $"{StartPoint}; {Destination}; {Distance}Km; {ValueKm.ToString("C2", new CultureInfo("pt-BR"))}; {TotalValue.ToString("C2", new CultureInfo("pt-BR"))};" +
                 $"{Load}; {Trace}; {Obs}; {Driver}; {Client}; {Concluded}";
         }
     }

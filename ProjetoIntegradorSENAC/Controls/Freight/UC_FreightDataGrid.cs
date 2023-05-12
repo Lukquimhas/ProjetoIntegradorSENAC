@@ -15,9 +15,12 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
 {
     public partial class UC_FreightDataGrid : UserControl
     {
-        public UC_FreightDataGrid()
+        string UserId;
+
+        public UC_FreightDataGrid(string userId)
         {
             InitializeComponent();
+            UserId = userId;
         }
 
         private void AddFreightDataGrid()
@@ -42,6 +45,12 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
         private void UC_FreightDataGrid_Load(object sender, EventArgs e)
         {
             AddFreightDataGrid();
+        }
+
+        private void btn_createFreight_Click(object sender, EventArgs e)
+        {
+            var frmcreateFreight = new frmCreateFreight(UserId);
+            frmcreateFreight.Show();
         }
     }
 }

@@ -43,6 +43,7 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_createFreight = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Freight)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -164,12 +165,23 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_createFreight);
             this.panel1.Controls.Add(this.dgv_Freight);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(952, 600);
             this.panel1.TabIndex = 3;
+            // 
+            // btn_createFreight
+            // 
+            this.btn_createFreight.Location = new System.Drawing.Point(19, 492);
+            this.btn_createFreight.Name = "btn_createFreight";
+            this.btn_createFreight.Size = new System.Drawing.Size(159, 79);
+            this.btn_createFreight.TabIndex = 3;
+            this.btn_createFreight.Text = "criar novo frete";
+            this.btn_createFreight.UseVisualStyleBackColor = true;
+            this.btn_createFreight.Click += new System.EventHandler(this.btn_createFreight_Click);
             // 
             // UC_FreightDataGrid
             // 
@@ -201,5 +213,6 @@
         private DataGridViewTextBoxColumn Column10;
         private DataGridViewTextBoxColumn Column11;
         private Panel panel1;
+        private Button btn_createFreight;
     }
 }

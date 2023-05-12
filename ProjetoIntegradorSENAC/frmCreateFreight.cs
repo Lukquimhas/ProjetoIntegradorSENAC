@@ -22,13 +22,14 @@ namespace ProjetoIntegradorSENAC
         private void CreateFreight(string startPoint, string destination, double distance, double value_per_km, string load, string trace, string obs)
         {
             var select = new ScriptSelect();
-            var query = select.ScriptGetFreightId();
+            var insert = new ScriptInsert();            
+            
             try
             {
                 var freight = new Freight
                 {
-                    From = startPoint,
-                    To = destination,
+                    StartPoint = startPoint,
+                    Destination = destination,
                     Distance = distance,
                     ValueKm = value_per_km,
                     Load = load,
@@ -39,10 +40,13 @@ namespace ProjetoIntegradorSENAC
                     CreateDate = DateTime.Now
                 };
 
-                var listId = db.ExecuteSelectQuery(query);
+                var queryGetFreightId = select.ScriptGetFreightId();
+                var listId = db.ExecuteSelectQuery(queryGetFreightId);
                 freight.IdFreight = listId[0];
                 freight.TotalValue = freight.GetTotalValue();
 
+                var queryInsertFreightDB = insert.InsertFreightDB(freight);
+                db.ExecuteQuery(queryInsertFreightDB);
                 MessageBox.Show("Frete criado com sucesso!");
             }
             catch (Exception ex)
