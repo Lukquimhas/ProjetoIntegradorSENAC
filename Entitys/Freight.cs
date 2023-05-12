@@ -21,8 +21,14 @@ namespace Entitys
         public string Driver { get; set; }
         public string Client { get; set; }
         public string Concluded { get; set; }
+        public DateTime CreateDate { get; set; }
 
         public Freight() { }
+
+        public double GetTotalValue()
+        {
+            return this.Distance * this.ValueKm;
+        }
 
         public override string ToString()
         {

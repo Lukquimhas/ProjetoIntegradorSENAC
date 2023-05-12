@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entitys
 {
-    public class User
+    public class _user
     {
         public string UserId { get; set; }
         public string Name { get; set; }
@@ -18,7 +18,7 @@ namespace Entitys
         public string AccountType { get; set; }
         
 
-        public User()
+        public _user()
         {
             UserId = IdGenerate();
         }

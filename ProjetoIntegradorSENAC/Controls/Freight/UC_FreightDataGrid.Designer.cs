@@ -80,13 +80,13 @@
             this.Column11});
             this.dgv_Freight.EnableHeadersVisualStyles = false;
             this.dgv_Freight.GridColor = System.Drawing.Color.White;
-            this.dgv_Freight.Location = new System.Drawing.Point(43, 54);
+            this.dgv_Freight.Location = new System.Drawing.Point(3, 3);
             this.dgv_Freight.MultiSelect = false;
             this.dgv_Freight.Name = "dgv_Freight";
             this.dgv_Freight.RowHeadersVisible = false;
             this.dgv_Freight.RowTemplate.Height = 25;
             this.dgv_Freight.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Freight.Size = new System.Drawing.Size(881, 462);
+            this.dgv_Freight.Size = new System.Drawing.Size(946, 475);
             this.dgv_Freight.TabIndex = 2;
             // 
             // Column1

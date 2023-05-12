@@ -8,6 +8,11 @@ namespace Sql.Query
 {
     public class ScriptSelect
     {
+        public string ScriptGetFreightId()
+        {
+            return "SELECT TOP 1 id FROM fretes ORDER BY ID DESC";
+        }
+
         public string ScriptValidateLogin(string username)
         {
             return $"SELECT IdUsuario, username, senha FROM usuarios WHERE username='{username}'";
