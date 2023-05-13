@@ -1,5 +1,6 @@
 ﻿using Entitys;
 using Microsoft.VisualBasic.ApplicationServices;
+using ProjetoIntegradorSENAC.Controls.Freight;
 using Sql;
 using Sql.Query;
 
@@ -7,61 +8,24 @@ namespace ProjetoIntegradorSENAC
 {
     public partial class frmCreateFreight : Form
     {
-        DataBase db;
-
-        _user userLogged;
-
+        UC_CreateFreight uc_createFreight;
 
         public frmCreateFreight(string userId)
         {
             InitializeComponent();
-            db = new DataBase();
-            userLogged = GetLoggedUser(userId);
+            uc_createFreight = new UC_CreateFreight(userId);
         }
 
-        private void CreateFreight(string startPoint, string destination, double distance, double value_per_km, string load, string trace, string obs)
+        private void pn_main_Paint(object sender, PaintEventArgs e)
         {
-            var select = new ScriptSelect();
-            var insert = new ScriptInsert();            
-            
-            try
-            {
-                var freight = new Freight
-                {
-                    StartPoint = startPoint,
-                    Destination = destination,
-                    Distance = distance,
-                    ValueKm = value_per_km,
-                    Load = load,
-                    Trace = trace,
-                    Obs = obs,
-                    Client = userLogged.IdCompany,
-                    Concluded = "Não",
-                    CreateDate = DateTime.Now
-                };
-
-                var queryGetFreightId = select.ScriptGetFreightId();
-                var listId = db.ExecuteSelectQuery(queryGetFreightId);
-                freight.IdFreight = listId[0];
-                freight.TotalValue = freight.GetTotalValue();
-
-                var queryInsertFreightDB = insert.InsertFreightDB(freight);
-                db.ExecuteQuery(queryInsertFreightDB);
-                MessageBox.Show("Frete criado com sucesso!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            ChangePanel(uc_createFreight);
         }
 
-        private _user GetLoggedUser(string userId)
+        private void ChangePanel(UserControl uc)
         {
-            var select = new ScriptSelect();
-
-            var query = select.ScriptSelectUserInfo(userId);
-
-            return db.ExecuteUserLoggedSelectQuery(query);
+            uc.Dock = DockStyle.Fill;
+            pn_main.Controls.Add(uc);
+            uc.BringToFront();
         }
     }
 }

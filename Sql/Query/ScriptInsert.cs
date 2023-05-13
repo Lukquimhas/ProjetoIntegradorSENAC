@@ -11,7 +11,7 @@ namespace Sql.Query
 {
     public class ScriptInsert
     {
-        public string InsertFreightDB(Freight freight)
+        public string InsertFreightDB(_freight freight)
         {
             string query = $"INSERT INTO fretes VALUES ({freight.IdFreight}, '{freight.StartPoint}', '{freight.Destination}', {freight.Distance}, {freight.ValueKm}, {freight.TotalValue}," +
                         $" '{freight.Load}', '{freight.Trace}', '{freight.Obs}', 'NULL', '{freight.Client}', '{freight.Concluded}', '{freight.CreateDate.ToString("yyyy-MM-dd HH:mm:ss.fff")}')";

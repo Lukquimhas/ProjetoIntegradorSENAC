@@ -132,3 +132,4 @@ C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoInteg
 C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Main.Profile.UC_Profile.resources
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Main.Profile.UC_Profile.resources
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.frmCreateFreight.resources
+C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\ProjetoIntegradorSENAC\obj\Debug\net6.0-windows\ProjetoIntegradorSENAC.Controls.Freight.UC_CreateFreight.resources

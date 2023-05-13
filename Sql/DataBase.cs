@@ -47,9 +47,9 @@ namespace Sql
             }
         }
 
-        public List<Freight> ExecuteFreightSelectQuery(string query)
+        public List<_freight> ExecuteFreightSelectQuery(string query)
         {
-            var Freights = new List<Freight>();
+            var Freights = new List<_freight>();
             using (var conn = ConnectionProjetoSENAC())
             {
                 var command = new SqlCommand
@@ -62,7 +62,7 @@ namespace Sql
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    Freights.Add(new Freight
+                    Freights.Add(new _freight
                     {
                         IdFreight = reader["Id"].ToString(),
                         StartPoint = reader["origem"].ToString(),
