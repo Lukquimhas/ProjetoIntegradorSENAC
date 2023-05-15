@@ -21,7 +21,7 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
             userLogged = GetLoggedUser(userId);
         }
 
-        private void CreateFreight(string startPoint, string destination, double distance, double value_per_km, string load, string trace, string obs)
+        private void CreateFreight(string startPoint, string destination, double distance, double value_per_km, string load, bool trace, string obs)
         {
             var select = new ScriptSelect();
             var insert = new ScriptInsert();
@@ -38,7 +38,7 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
                     Trace = trace,
                     Obs = obs,
                     Client = userLogged.IdCompany,
-                    Concluded = "Não",
+                    Concluded = false,
                     CreateDate = DateTime.Now
                 };
 

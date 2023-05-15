@@ -49,7 +49,7 @@
             this.pn_Left.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_Left.Location = new System.Drawing.Point(0, 0);
             this.pn_Left.Name = "pn_Left";
-            this.pn_Left.Size = new System.Drawing.Size(95, 616);
+            this.pn_Left.Size = new System.Drawing.Size(95, 656);
             this.pn_Left.TabIndex = 0;
             // 
             // btn_Profile
@@ -131,14 +131,14 @@
             this.pn_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_Main.Location = new System.Drawing.Point(95, 0);
             this.pn_Main.Name = "pn_Main";
-            this.pn_Main.Size = new System.Drawing.Size(950, 616);
+            this.pn_Main.Size = new System.Drawing.Size(1112, 656);
             this.pn_Main.TabIndex = 1;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 616);
+            this.ClientSize = new System.Drawing.Size(1207, 656);
             this.Controls.Add(this.pn_Main);
             this.Controls.Add(this.pn_Left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entitys
 {
-    public class Freight
+    public class _freight
     {
         public string IdFreight { get; set; }
         public string StartPoint { get; set; }
@@ -16,14 +16,14 @@ namespace Entitys
         public double ValueKm { get; set; }
         public double TotalValue { get; set; }
         public string Load { get; set; }
-        public string Trace { get; set; }
+        public bool Trace { get; set; }
         public string Obs { get; set; }
         public string Driver { get; set; }
         public string Client { get; set; }
-        public string Concluded { get; set; }
+        public bool Concluded { get; set; }
         public DateTime CreateDate { get; set; }
 
-        public Freight() { }
+        public _freight() { }
 
         public double GetTotalValue()
         {

@@ -87,7 +87,7 @@
             this.dgv_Freight.RowHeadersVisible = false;
             this.dgv_Freight.RowTemplate.Height = 25;
             this.dgv_Freight.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Freight.Size = new System.Drawing.Size(946, 475);
+            this.dgv_Freight.Size = new System.Drawing.Size(1013, 505);
             this.dgv_Freight.TabIndex = 2;
             // 
             // Column1
@@ -170,12 +170,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(952, 600);
+            this.panel1.Size = new System.Drawing.Size(1019, 644);
             this.panel1.TabIndex = 3;
             // 
             // btn_createFreight
             // 
-            this.btn_createFreight.Location = new System.Drawing.Point(19, 492);
+            this.btn_createFreight.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_createFreight.Location = new System.Drawing.Point(43, 534);
             this.btn_createFreight.Name = "btn_createFreight";
             this.btn_createFreight.Size = new System.Drawing.Size(159, 79);
             this.btn_createFreight.TabIndex = 3;
@@ -189,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "UC_FreightDataGrid";
-            this.Size = new System.Drawing.Size(952, 600);
+            this.Size = new System.Drawing.Size(1019, 644);
             this.Load += new System.EventHandler(this.UC_FreightDataGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Freight)).EndInit();
             this.panel1.ResumeLayout(false);

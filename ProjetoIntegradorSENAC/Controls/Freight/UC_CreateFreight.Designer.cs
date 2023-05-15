@@ -66,6 +66,7 @@
             // btn_cancel
             // 
             this.btn_cancel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cancel.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_cancel.Location = new System.Drawing.Point(405, 472);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(113, 54);
@@ -77,6 +78,7 @@
             // 
             this.btn_createFreight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_createFreight.Enabled = false;
+            this.btn_createFreight.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_createFreight.Location = new System.Drawing.Point(535, 472);
             this.btn_createFreight.Name = "btn_createFreight";
             this.btn_createFreight.Size = new System.Drawing.Size(113, 54);
@@ -97,10 +99,10 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(433, 289);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 14);
+            this.label9.Size = new System.Drawing.Size(76, 14);
             this.label9.TabIndex = 86;
             this.label9.Text = "Valor total:";
             // 
@@ -220,10 +222,10 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(21, 136);
+            this.label8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(13, 135);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 14);
+            this.label8.Size = new System.Drawing.Size(69, 14);
             this.label8.TabIndex = 81;
             this.label8.Text = "Distancia:";
             // 
@@ -240,10 +242,10 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(76, 285);
+            this.label7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(66, 285);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 14);
+            this.label7.Size = new System.Drawing.Size(87, 14);
             this.label7.TabIndex = 79;
             this.label7.Text = "Observacao:";
             // 
@@ -281,10 +283,10 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(17, 232);
+            this.label6.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(9, 231);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 14);
+            this.label6.Size = new System.Drawing.Size(64, 14);
             this.label6.TabIndex = 75;
             this.label6.Text = "Rastreio:";
             // 
@@ -292,10 +294,10 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(17, 198);
+            this.label5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(9, 197);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 14);
+            this.label5.Size = new System.Drawing.Size(50, 14);
             this.label5.TabIndex = 74;
             this.label5.Text = "Carga:";
             // 
@@ -303,10 +305,10 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(17, 164);
+            this.label4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(9, 163);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 14);
+            this.label4.Size = new System.Drawing.Size(85, 14);
             this.label4.TabIndex = 73;
             this.label4.Text = "Valor(p/Km):";
             // 
@@ -314,10 +316,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(21, 103);
+            this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(13, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 14);
+            this.label3.Size = new System.Drawing.Size(60, 14);
             this.label3.TabIndex = 72;
             this.label3.Text = "Destino:";
             // 
@@ -325,10 +327,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(21, 71);
+            this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(13, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 14);
+            this.label2.Size = new System.Drawing.Size(57, 14);
             this.label2.TabIndex = 71;
             this.label2.Text = "Origem:";
             // 
@@ -336,10 +338,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(259, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 14);
+            this.label1.Size = new System.Drawing.Size(139, 14);
             this.label1.TabIndex = 70;
             this.label1.Text = "Informaçoes do frete";
             // 
