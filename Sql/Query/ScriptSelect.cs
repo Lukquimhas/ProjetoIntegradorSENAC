@@ -10,7 +10,7 @@ namespace Sql.Query
     {
         public string ScriptGetFreightId()
         {
-            return "SELECT TOP 1 id FROM fretes ORDER BY ID DESC";
+            return "SELECT TOP 1 Id FROM Fretes ORDER BY ID DESC";
         }
 
         public string ScriptValidateLogin(string username)
@@ -20,7 +20,7 @@ namespace Sql.Query
 
         public string ScriptGetFreight()
         {
-            return $"SELECT * FROM fretes";
+            return $"SELECT * FROM Frete";
         }
 
         public string ScriptSelectUserInfo(string UserId)

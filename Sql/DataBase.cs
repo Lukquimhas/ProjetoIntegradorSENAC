@@ -65,17 +65,18 @@ namespace Sql
                     Freights.Add(new _freight
                     {
                         IdFreight = reader["Id"].ToString(),
-                        StartPoint = reader["origem"].ToString(),
-                        Destination = reader["destino"].ToString(),
-                        Distance = double.Parse(reader["distancia"].ToString()),
-                        ValueKm = double.Parse(reader["valor_km"].ToString()),
-                        TotalValue = double.Parse(reader["valor_total"].ToString()),
-                        Load = reader["carga"].ToString(),
-                        Trace = reader["rastreio"].ToString(),
-                        Obs = reader["observacao"].ToString(),
-                        Driver = reader["motorista"].ToString(),
-                        Client = reader["cliente"].ToString(),
-                        Concluded = reader["concluido"].ToString()
+                        StartPoint = reader["Origem"].ToString(),
+                        Destination = reader["Destino"].ToString(),
+                        Distance = double.Parse(reader["Distancia"].ToString()),
+                        ValueKm = double.Parse(reader["ValorKm"].ToString()),
+                        TotalValue = double.Parse(reader["ValorTotal"].ToString()),
+                        Load = reader["Carga"].ToString(),
+                        Trace = Convert.ToBoolean(reader["Rastreio"]),
+                        Obs = reader["Observacao"].ToString(),
+                        Driver = reader["Motorista"].ToString(),
+                        Client = reader["Cliente"].ToString(),
+                        Concluded = Convert.ToBoolean(reader["Concluido"]),
+                        CreateDate = Convert.ToDateTime(reader["DataCriado"])
                     });
                 }
 
