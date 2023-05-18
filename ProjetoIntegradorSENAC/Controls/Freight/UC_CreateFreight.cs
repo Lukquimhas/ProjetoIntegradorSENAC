@@ -57,6 +57,24 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
             }
         }
 
+        private void SetComboBoxCity(ComboBox stateComboBox, ComboBox cityComboBox)
+        {
+            cityComboBox.Enabled = true;
+            cityComboBox.Items.Clear();
+
+            var state = stateComboBox.Text;
+            var select = new ScriptSelect();
+            var query = select.ScriptSelectStateCity(state);
+
+            var db = new DataBase();
+            var citys = db.ExecuteGetCity(query, state);
+
+            foreach (var item in citys)
+            {
+                cityComboBox.Items.Add(item);
+            }
+        }
+
         private _user GetLoggedUser(string userId)
         {
             var select = new ScriptSelect();
@@ -115,6 +133,16 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
             JToken distanceNode = jsonObject.SelectToken("rows[0].elements[0].distance");
 
             return distanceNode;
+        }
+
+        private void cb_startingPointStates_TextChanged(object sender, EventArgs e)
+        {
+            SetComboBoxCity((sender as ComboBox), cb_startingPointCity);
+        }
+
+        private void cb_destinationStates_TextChanged(object sender, EventArgs e)
+        {
+            SetComboBoxCity((sender as ComboBox), cb_destinationCity);
         }
     }
 }

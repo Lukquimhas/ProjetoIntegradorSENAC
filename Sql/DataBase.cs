@@ -116,7 +116,35 @@ namespace Sql
             }
         }
 
+        public List<string> ExecuteGetCity(string query, string state)
+        {
+            var cityList = new List<string>();
+            using (var conn = ConnectionProjetoSENAC())
+            {
+                var command = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandText = query
+                };
 
+                try
+                {
+                    conn.Open();
+                    var reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        cityList.Add($"{reader["cidade"]}-{reader["estado"]}");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+
+            return cityList;
+        }
 
         public static SqlConnection ConnectionProjetoSENAC()
         {

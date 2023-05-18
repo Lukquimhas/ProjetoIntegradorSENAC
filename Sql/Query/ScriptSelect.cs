@@ -27,5 +27,10 @@ namespace Sql.Query
         {
             return $"SELECT * FROM usuarios WHERE IdUsuario='{UserId}'";
         }
+
+        public string ScriptSelectStateCity(string state)
+        {
+            return $"SELECT * FROM cidades_estados WHERE estado='{state}'";
+        }
     }
 }

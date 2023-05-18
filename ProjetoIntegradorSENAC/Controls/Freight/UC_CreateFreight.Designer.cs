@@ -55,7 +55,6 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("pt-BR");
             this.maskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
             this.maskedTextBox1.Location = new System.Drawing.Point(297, 164);
             this.maskedTextBox1.Mask = "$0,00";
@@ -171,6 +170,7 @@
             this.cb_startingPointStates.Size = new System.Drawing.Size(49, 23);
             this.cb_startingPointStates.Sorted = true;
             this.cb_startingPointStates.TabIndex = 69;
+            this.cb_startingPointStates.TextChanged += new System.EventHandler(this.cb_startingPointStates_TextChanged);
             // 
             // cb_destinationStates
             // 
@@ -208,6 +208,7 @@
             this.cb_destinationStates.Name = "cb_destinationStates";
             this.cb_destinationStates.Size = new System.Drawing.Size(49, 23);
             this.cb_destinationStates.TabIndex = 83;
+            this.cb_destinationStates.TextChanged += new System.EventHandler(this.cb_destinationStates_TextChanged);
             // 
             // tb_distance
             // 
