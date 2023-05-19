@@ -72,6 +72,7 @@
             this.btn_cancel.TabIndex = 89;
             this.btn_cancel.Text = "Cancelar";
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_createFreight
             // 
@@ -84,6 +85,7 @@
             this.btn_createFreight.TabIndex = 88;
             this.btn_createFreight.Text = "cadastrar";
             this.btn_createFreight.UseVisualStyleBackColor = true;
+            this.btn_createFreight.Click += new System.EventHandler(this.btn_createFreight_Click);
             // 
             // tb_totalValue
             // 
@@ -117,6 +119,7 @@
             this.cb_destinationCity.Sorted = true;
             this.cb_destinationCity.TabIndex = 85;
             this.cb_destinationCity.Text = "--Insira a cidade--";
+            this.cb_destinationCity.TextChanged += new System.EventHandler(this.cb_destinationCity_TextChanged);
             // 
             // cb_startingPointCity
             // 
@@ -132,6 +135,7 @@
             this.cb_startingPointCity.Sorted = true;
             this.cb_startingPointCity.TabIndex = 84;
             this.cb_startingPointCity.Text = "--Insira a cidade--";
+            this.cb_startingPointCity.TextChanged += new System.EventHandler(this.cb_startingPointCity_TextChanged);
             // 
             // cb_startingPointStates
             // 
@@ -279,6 +283,7 @@
             this.tb_valuePerKm.PlaceholderText = "R$0,00";
             this.tb_valuePerKm.Size = new System.Drawing.Size(163, 23);
             this.tb_valuePerKm.TabIndex = 76;
+            this.tb_valuePerKm.TextChanged += new System.EventHandler(this.tb_valuePerKm_TextChanged);
             // 
             // label6
             // 
@@ -374,6 +379,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_CreateFreight";
             this.Size = new System.Drawing.Size(730, 567);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.UC_CreateFreight_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

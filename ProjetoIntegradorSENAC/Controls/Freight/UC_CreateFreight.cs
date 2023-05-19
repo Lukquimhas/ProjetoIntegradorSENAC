@@ -5,6 +5,7 @@ using Sql;
 using Sql.Query;
 using System.Net;
 using System.Configuration;
+using System.Globalization;
 
 namespace ProjetoIntegradorSENAC.Controls.Freight
 {
@@ -143,6 +144,67 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
         private void cb_destinationStates_TextChanged(object sender, EventArgs e)
         {
             SetComboBoxCity((sender as ComboBox), cb_destinationCity);
+        }
+
+        private void SetDistance(ComboBox comboBox)
+        {
+            if (comboBox.Enabled == true && comboBox.Text != "--Insira a cidade--")
+            {
+                var distancia = CalcDistance();
+                tb_distance.Text = $"{distancia}Km";
+            }
+        }
+
+        private void cb_startingPointCity_TextChanged(object sender, EventArgs e)
+        {
+            SetDistance(cb_destinationCity);
+        }
+
+        private void cb_destinationCity_TextChanged(object sender, EventArgs e)
+        {
+            SetDistance(cb_startingPointCity);
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.FindForm().Hide();
+        }
+
+        private void tb_valuePerKm_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_distance.Text != "" && tb_valuePerKm.Text != "")
+                tb_totalValue.Text = (double.Parse(tb_distance.Text.Replace("Km", "")) * double.Parse(tb_valuePerKm.Text.Replace(",", "."))).ToString("C2", new CultureInfo("pt-BR"));
+        }
+
+        private void UC_CreateFreight_Paint(object sender, PaintEventArgs e)
+        {
+            ValidateFields();
+        }
+
+        private void ValidateFields()
+        {
+            int empty_fields = 0;
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl.Text == "")
+                {
+                    empty_fields++;
+                }
+            }
+
+            if (empty_fields == 0)
+                btn_createFreight.Enabled = true;
+            else
+                btn_createFreight.Enabled = false;
+        }
+
+        private void btn_createFreight_Click(object sender, EventArgs e)
+        {
+            bool trace = false;
+            if (cb_track.Text == "Sim")
+                trace = true;
+
+            CreateFreight(cb_startingPointCity.Text, cb_destinationCity.Text, double.Parse(tb_distance.Text.Replace("Km", "")), double.Parse(tb_valuePerKm.Text), tb_load.Text, trace, tb_obs.Text);
         }
     }
 }
