@@ -24,7 +24,6 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
 
         private void CreateFreight(string startPoint, string destination, double distance, double value_per_km, string load, bool trace, string obs)
         {
-            var select = new ScriptSelect();
             var insert = new ScriptInsert();
 
             try
@@ -35,18 +34,14 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
                     Destination = destination,
                     Distance = distance,
                     ValueKm = value_per_km,
+                    TotalValue = distance * value_per_km,
                     Load = load,
                     Trace = trace,
                     Obs = obs,
-                    Client = userLogged.IdCompany,
+                    Client = "teste",
                     Concluded = false,
                     CreateDate = DateTime.Now
                 };
-
-                var queryGetFreightId = select.ScriptGetFreightId();
-                var listId = db.ExecuteSelectQuery(queryGetFreightId);
-                freight.IdFreight = listId[0];
-                freight.TotalValue = freight.GetTotalValue();
 
                 var queryInsertFreightDB = insert.InsertFreightDB(freight);
                 db.ExecuteQuery(queryInsertFreightDB);

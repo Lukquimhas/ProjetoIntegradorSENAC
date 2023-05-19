@@ -23,11 +23,34 @@ namespace Entitys
         public bool Concluded { get; set; }
         public DateTime CreateDate { get; set; }
 
-        public _freight() { }
-
-        public double GetTotalValue()
+        public _freight()
         {
-            return this.Distance * this.ValueKm;
+            IdFreight = IdGenerate();
+        }
+
+        private string IdGenerate()
+        {
+            string character = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            string FreightId = "";
+            Random random = new Random();
+
+            while (FreightId.Length < 36)
+            {
+                char c = (char)character[random.Next(character.Length)];
+
+                FreightId += c;
+
+                if (FreightId.Length == 8)
+                    FreightId += "-";
+                else if (FreightId.Replace("-", "").Length == 12)
+                    FreightId += "-";
+                else if (FreightId.Replace("-", "").Length == 16)
+                    FreightId += "-";
+                else if (FreightId.Replace("-", "").Length == 20)
+                    FreightId += "-";
+            }
+
+            return FreightId;
         }
 
         public override string ToString()

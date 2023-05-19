@@ -13,8 +13,8 @@ namespace Sql.Query
     {
         public string InsertFreightDB(_freight freight)
         {
-            string query = $"INSERT INTO fretes VALUES ({freight.IdFreight}, '{freight.StartPoint}', '{freight.Destination}', {freight.Distance}, {freight.ValueKm}, {freight.TotalValue}," +
-                        $" '{freight.Load}', '{freight.Trace}', '{freight.Obs}', 'NULL', '{freight.Client}', '{freight.Concluded}', '{freight.CreateDate.ToString("yyyy-MM-dd HH:mm:ss.fff")}')";
+            string query = $"INSERT INTO Frete VALUES ('{freight.IdFreight}', '{freight.StartPoint}', '{freight.Destination}', {freight.Distance}, {freight.ValueKm}, {freight.TotalValue}," +
+                        $" '{freight.Load}', {Convert.ToInt32(freight.Trace)}, '{freight.Obs}', 'NULL', '{freight.Client}', {Convert.ToInt32(freight.Concluded)}, '{freight.CreateDate.ToString("yyyy-MM-dd HH:mm:ss.fff")}')";
             return query;
         }
     }
