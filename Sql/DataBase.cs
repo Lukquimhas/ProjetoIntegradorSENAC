@@ -2,6 +2,7 @@
 using Entitys;
 using System.Data.SqlClient;
 using System.Reflection.Metadata;
+using System.Security.Cryptography;
 
 namespace Sql
 {
@@ -9,7 +10,7 @@ namespace Sql
     {
         public void ExecuteQuery(string query)
         {
-            using(var conn = ConnectionProjetoSENAC())
+            using (var conn = ConnectionProjetoSENAC())
             {
                 var command = new SqlCommand
                 {
@@ -37,7 +38,7 @@ namespace Sql
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    for(int i = 0; i < reader.FieldCount; i++)
+                    for (int i = 0; i < reader.FieldCount; i++)
                     {
                         InfoList.Add(reader.GetString(i));
                     }
@@ -101,7 +102,7 @@ namespace Sql
                     var user = new _user
                     {
                         UserId = reader["IdUsuario"].ToString(),
-                        Name = reader["nome"].ToString(),
+                        Name = reader["name"].ToString(),
                         Username = reader["username"].ToString(),
                         Email = reader["email"].ToString(),
                         Password = reader["senha"].ToString(),
@@ -144,6 +145,44 @@ namespace Sql
             }
 
             return cityList;
+        }
+
+        public Company ExecuteGetCompany(string query)
+        {
+            using (var conn = ConnectionProjetoSENAC())
+            {
+                try
+                {
+                    var command = new SqlCommand()
+                    {
+                        Connection = conn,
+                        CommandText = query,
+                    };
+                    conn.Open();
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        var company = new Company
+                        {
+                            CompanyId = reader["EmpresaId"].ToString(),
+                            CorporateName = reader["RazaoSocial"].ToString(),
+                            CNPJ = reader["CNPJ"].ToString(),
+                            PhoneNumber = reader["Telefone"].ToString(),
+                            OpeningDate = Convert.ToDateTime(reader["DataDeAbertura"].ToString()),
+                            RegisterDate = Convert.ToDateTime(reader["Data_Cadastro"].ToString()),
+                            Note = double.Parse(reader["Nota"].ToString())
+                        };
+                        return company;
+                    }
+
+                    return new Company();
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
         }
 
         public static SqlConnection ConnectionProjetoSENAC()

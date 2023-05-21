@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_createFreight = new System.Windows.Forms.Button();
             this.tb_totalValue = new System.Windows.Forms.TextBox();
@@ -51,16 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.maskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.maskedTextBox1.Location = new System.Drawing.Point(297, 164);
-            this.maskedTextBox1.Mask = "$0,00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(158, 23);
-            this.maskedTextBox1.TabIndex = 90;
             // 
             // btn_cancel
             // 
@@ -355,7 +344,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_createFreight);
             this.Controls.Add(this.tb_totalValue);
@@ -386,8 +374,6 @@
         }
 
         #endregion
-
-        private MaskedTextBox maskedTextBox1;
         private Button btn_cancel;
         private Button btn_createFreight;
         private TextBox tb_totalValue;

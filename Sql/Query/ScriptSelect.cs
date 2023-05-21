@@ -30,7 +30,12 @@ namespace Sql.Query
 
         public string ScriptSelectStateCity(string state)
         {
-            return $"SELECT * FROM cidades_estados WHERE estado='{state}'";
+            return $"SELECT * FROM cidades WHERE estado='{state}'";
+        }
+
+        public string ScriptSelectEmpresa(string companyId)
+        {
+            return $"SELECT * FROM Empresa WHERE EmpresaId='{companyId}'";
         }
     }
 }
