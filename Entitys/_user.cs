@@ -20,32 +20,7 @@ namespace Entitys
 
         public _user()
         {
-            UserId = IdGenerate();
-        }
 
-        private string IdGenerate()
-        {
-            string character = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            string UserID = "";
-            Random random = new Random();
-
-            while (UserID.Length < 36)
-            {
-                char c = (char)character[random.Next(character.Length)];
-
-                UserID += c;
-
-                if (UserID.Length == 8)
-                    UserID += "-";
-                else if (UserID.Replace("-", "").Length == 12)
-                    UserID += "-";
-                else if (UserID.Replace("-", "").Length == 16)
-                    UserID += "-";
-                else if (UserID.Replace("-", "").Length == 20)
-                    UserID += "-";
-            }
-
-            return UserID;
         }
     }
 }

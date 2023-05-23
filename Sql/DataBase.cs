@@ -77,7 +77,8 @@ namespace Sql
                         Driver = reader["Motorista"].ToString(),
                         Client = reader["Cliente"].ToString(),
                         Concluded = Convert.ToBoolean(reader["Concluido"]),
-                        CreateDate = Convert.ToDateTime(reader["DataCriado"])
+                        CreateDate = Convert.ToDateTime(reader["DataCriado"]),
+                        IdClient = reader["idCliente"].ToString()
                     });
                 }
 
@@ -187,7 +188,8 @@ namespace Sql
 
         public static SqlConnection ConnectionProjetoSENAC()
         {
-            return new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            return new SqlConnection("Server=DESKTOP-HOOC6CO;Database=projeto_SENAC;Trusted_Connection=True;");
+            //return new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         }
     }
 }

@@ -47,3 +47,5 @@ C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.
 C:\Users\leo11\source\repos\Forms\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Entitys.pdb
 C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Entitys.dll
 C:\Users\leonardo.osantos16\Documents\GitHub\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Entitys.pdb
+C:\Users\leonardo.oliveira\Documents\GitHub\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Entitys.dll
+C:\Users\leonardo.oliveira\Documents\GitHub\ProjetoIntegradorSENAC\Control\bin\Debug\net6.0-windows\Entitys.pdb

@@ -45,6 +45,7 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_createFreight = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Freight)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -90,13 +91,13 @@
             this.dgv_Freight.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Freight.EnableHeadersVisualStyles = false;
             this.dgv_Freight.GridColor = System.Drawing.Color.White;
-            this.dgv_Freight.Location = new System.Drawing.Point(3, 3);
+            this.dgv_Freight.Location = new System.Drawing.Point(3, 134);
             this.dgv_Freight.MultiSelect = false;
             this.dgv_Freight.Name = "dgv_Freight";
             this.dgv_Freight.RowHeadersVisible = false;
             this.dgv_Freight.RowTemplate.Height = 25;
             this.dgv_Freight.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Freight.Size = new System.Drawing.Size(1013, 505);
+            this.dgv_Freight.Size = new System.Drawing.Size(1013, 375);
             this.dgv_Freight.TabIndex = 2;
             // 
             // Column1
@@ -174,6 +175,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btn_createFreight);
             this.panel1.Controls.Add(this.dgv_Freight);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -185,13 +187,23 @@
             // btn_createFreight
             // 
             this.btn_createFreight.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_createFreight.Location = new System.Drawing.Point(43, 534);
+            this.btn_createFreight.Location = new System.Drawing.Point(52, 533);
             this.btn_createFreight.Name = "btn_createFreight";
             this.btn_createFreight.Size = new System.Drawing.Size(159, 79);
             this.btn_createFreight.TabIndex = 3;
             this.btn_createFreight.Text = "criar novo frete";
             this.btn_createFreight.UseVisualStyleBackColor = true;
             this.btn_createFreight.Click += new System.EventHandler(this.btn_createFreight_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(338, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(288, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "FRETES DA SUA EMPRESA";
             // 
             // UC_FreightDataGrid
             // 
@@ -203,6 +215,7 @@
             this.Load += new System.EventHandler(this.UC_FreightDataGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Freight)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -224,5 +237,6 @@
         private DataGridViewTextBoxColumn Column11;
         private Panel panel1;
         private Button btn_createFreight;
+        private Label label1;
     }
 }

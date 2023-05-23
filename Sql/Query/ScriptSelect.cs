@@ -18,9 +18,9 @@ namespace Sql.Query
             return $"SELECT IdUsuario, username, senha FROM usuarios WHERE username='{username}'";
         }
 
-        public string ScriptGetFreight()
+        public string ScriptGetFreight(string companyId)
         {
-            return $"SELECT * FROM Frete";
+            return $"SELECT * FROM Frete WHERE idCliente='{companyId}'";
         }
 
         public string ScriptSelectUserInfo(string UserId)

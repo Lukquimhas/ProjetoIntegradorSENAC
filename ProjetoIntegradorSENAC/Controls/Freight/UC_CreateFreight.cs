@@ -41,7 +41,8 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
                     Obs = obs,
                     Client = userCompany.CorporateName,
                     Concluded = false,
-                    CreateDate = DateTime.Now
+                    CreateDate = DateTime.Now,
+                    IdClient = userCompany.CompanyId
                 };
 
                 var queryInsertFreightDB = insert.InsertFreightDB(freight);

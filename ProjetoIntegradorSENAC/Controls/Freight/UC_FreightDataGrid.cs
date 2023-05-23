@@ -1,4 +1,5 @@
-﻿using Sql;
+﻿using Entitys;
+using Sql;
 using Sql.Query;
 using System;
 using System.Collections.Generic;
@@ -17,18 +18,23 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
     {
         string UserId;
 
+        DataBase db;
+        _user UserLogged;
+
         public UC_FreightDataGrid(string userId)
         {
             InitializeComponent();
             UserId = userId;
+
+            db = new DataBase();
+            UserLogged = GetLoggedUser(userId);
         }
 
         private void AddFreightDataGrid()
         {
-            var db = new DataBase();
             var ss = new ScriptSelect();
 
-            var query = ss.ScriptGetFreight();
+            var query = ss.ScriptGetFreight(UserLogged.IdCompany);
             var freights = db.ExecuteFreightSelectQuery(query);
 
             foreach(var freight in freights)
@@ -51,6 +57,14 @@ namespace ProjetoIntegradorSENAC.Controls.Freight
         {
             var frmcreateFreight = new frmCreateFreight(UserId);
             frmcreateFreight.Show();
+        }
+
+        private _user GetLoggedUser(string userId)
+        {
+            var select = new ScriptSelect();
+            var query = select.ScriptSelectUserInfo(userId);
+
+            return db.ExecuteUserLoggedSelectQuery(query);
         }
     }
 }

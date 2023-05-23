@@ -22,35 +22,11 @@ namespace Entitys
         public string Client { get; set; }
         public bool Concluded { get; set; }
         public DateTime CreateDate { get; set; }
+        public string IdClient { get; set; }
 
         public _freight()
         {
-            IdFreight = IdGenerate();
-        }
-
-        private string IdGenerate()
-        {
-            string character = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            string FreightId = "";
-            Random random = new Random();
-
-            while (FreightId.Length < 36)
-            {
-                char c = (char)character[random.Next(character.Length)];
-
-                FreightId += c;
-
-                if (FreightId.Length == 8)
-                    FreightId += "-";
-                else if (FreightId.Replace("-", "").Length == 12)
-                    FreightId += "-";
-                else if (FreightId.Replace("-", "").Length == 16)
-                    FreightId += "-";
-                else if (FreightId.Replace("-", "").Length == 20)
-                    FreightId += "-";
-            }
-
-            return FreightId;
+            IdFreight = Guid.NewGuid().ToString().ToUpper();
         }
 
         public override string ToString()
